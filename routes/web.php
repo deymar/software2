@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/erick',function (){
+    return "Hola mundo desde el primero ruteo";
+});
