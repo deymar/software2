@@ -8,6 +8,6 @@
 
 
 ## comando para evitar que git te pida username y contraseña
-- en el directorio principal del proyecto colocar:
+- En el directorio principal del proyecto colocar:
   
   `git config --global credential.helper store`
