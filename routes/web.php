@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/erick',function (){
-    return "Hola mundo desde el primero ruteo";
+    return "Hola mundo desde el primero ruteo probando git";
 });
