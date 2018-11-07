@@ -17,7 +17,7 @@
 
         <div class="content-login">
             <div class="title">
-                Acceso de Personal
+                Acceso del Cliente
             </div>
             <form id="formLogin" class="form-login" action="{{route('validarLogin')}}" method="POST">
                 {{-- toquen nesesario para los formularios --}}
