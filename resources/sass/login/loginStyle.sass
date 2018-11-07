@@ -1,0 +1,64 @@
+@import './../variables_mediaquerys.sass'
+
+.container
+    width: 100vw
+
+    
+    .content-login
+        width: 30%
+        margin: 2rem auto
+        overflow: hidden
+        background: var(--color-oscuro-opacado)
+
+        @media (max-width: $media_tablet)
+            width: 100%    
+
+        .title
+            background: var(--color-blanco)
+            color: var(--color-dark)
+            font-family: var(--tipografia-uno)
+            font-size: var(--font-size-grande-segundo)
+            text-align: center
+
+            
+        
+        .form-login
+            display: flex
+            flex-direction: column
+            margin: 1.5rem
+
+            .input-vertical , .input-horizontal
+                overflow: hidden
+                padding: 1rem
+
+            .input-vertical
+                
+                .input-mediano
+                    width: 100%
+                    background: var(--color-gris-claro)
+                    color: var(--color-blanco)
+                    padding: 0.5rem 0
+                    height: var(--font-size-grande-medio)
+                    text-align: center
+                    font-size: var(--font-size-normal)
+                    font-family: var(--tipografia-uno)
+
+            .input-horizontal
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                align-items: center
+
+                .btn-form
+                    cursor: pointer
+                    width: 100%
+                    margin: 1rem 0rem 1rem 0rem
+                    padding: 1rem 0
+                    font-family: var(--tipografia-uno)
+                    font-size: var(--font-size-normal)
+                    color: var(--color-blanco)
+                    background: var(--color-dark)
+
+
+::placeholder
+    color: var(--color-blanco)
