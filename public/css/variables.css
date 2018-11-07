@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+:root {
+  --color-dark: #000;
+  --color-gris: #222;
+  --color-gris-claro: #444;
+  --color-oscuro-opacado: rgba(0,0,0,0.6);
+  --color-blanco: #fff;
+  --color-blanco-opacado: rgba(254,255,230,0.7);
+  --colo-secundario: #00fbee;
+  --font-size-grande: 4rem;
+  --font-size-grande-segundo: 3rem;
+  --font-size-grande-medio: 1.5rem;
+  --font-size-normal: 1.2rem;
+  --tipografia-uno: 'Raleway' , 'sans-serif'; }
+
+/*# sourceMappingURL=variables.css.map */

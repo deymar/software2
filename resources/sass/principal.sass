@@ -1,0 +1,67 @@
+@import "variables_mediaquerys.sass"
+
+/**
+    principal blade
+    **/
+.super-content
+    width: 100vw
+    height: 100vh
+
+    .container
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        align-items: center
+        overflow: hidden
+
+        @media (max-width: $media_tablet)
+            flex-direction: column
+
+
+        .left
+            width: 60%
+            background: var(--color-oscuro-opacado)
+            padding: 2rem
+            text-align: center
+
+            @media (max-width: $media_tablet)
+                width: 100%
+                --font-size-grande: 2.5rem
+
+            .title
+                color: var(--color-blanco)
+                font-family: var(--tipografia-uno)
+                font-size: var(--font-size-grande)
+                padding: 0rem 1rem
+
+        .right
+            width:  40%
+            height: 100%
+            background: var(--color-oscuro-opacado)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+            @media (max-width: $media_tablet)
+                width: 100%
+
+            .sessiones
+                padding: 0 1rem 
+
+                .tipo-session
+                    background: var(--color-dark)
+                    color: var(--color-blanco)
+                    padding: 2rem
+                    margin: 1rem 0
+                    text-align: center
+                    cursor: pointer
+                    font-size: var(--font-size-grande-medio)
+                    font-family: var(--tipografia-uno)
+
+                    &:hover
+                        background: var(--color-gris)
+
+
+                

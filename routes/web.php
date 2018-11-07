@@ -12,9 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio/principal');
 });
 
 Route::get('/erick',function (){
     return "Hola mundo desde el primero ruteo probando git";
 });
+
+Route::get('/login/personal' , 'Auth\LoginController@loginPersonal')->name('loginPersonal');
+Route::get('/login/cliente' , 'Auth\LoginController@loginCliente')->name('loginCliente');
+Route::post('/login/validar' , 'Auth\LoginController@validarLogin')->name('validarLogin');
+
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

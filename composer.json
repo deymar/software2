@@ -48,12 +48,14 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
-        ]
+        ],
+        "sassInit" : "sass --watch ./resources/sass:./public/css"
     },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "process-timeout": 0
     },
     "minimum-stability": "dev",
     "prefer-stable": true
