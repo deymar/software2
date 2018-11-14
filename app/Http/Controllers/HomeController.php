@@ -11,6 +11,8 @@ class HomeController extends Controller
      *
      * @return void
      */
+    protected $redirectTo = '/loginPersonal';
+
     public function __construct()
     {
         $this->middleware('auth');

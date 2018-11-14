@@ -1,16 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat");
 :root {
   --color-dark: #000;
   --color-gris: #222;
   --color-gris-claro: #444;
+  --color-gris-suave: #999;
+  --color-gris-blaquesino: #ccc;
   --color-oscuro-opacado: rgba(0,0,0,0.6);
   --color-blanco: #fff;
   --color-blanco-opacado: rgba(254,255,230,0.7);
   --colo-secundario: #00fbee;
+  --color-error: #FA5858;
+  --color-error-dark: #3B0B0B;
+  --color-green: #0B610B;
+  --color-gren-claro: #04B404;
+  --color-red: #610B0B;
+  --color-red-claro: #FF0000;
   --font-size-grande: 4rem;
   --font-size-grande-segundo: 3rem;
   --font-size-grande-medio: 1.5rem;
   --font-size-normal: 1.2rem;
-  --tipografia-uno: 'Raleway' , 'sans-serif'; }
+  --font-size-peque: 1rem;
+  --tipografia-uno: "Raleway" , "sans-serif";
+  --tipografia-dos: "Montserrat" , "sans-serif";
+}
 
 /*# sourceMappingURL=variables.css.map */

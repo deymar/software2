@@ -1,0 +1,88 @@
+.container
+    font-family: var(--tipografia-uno)
+    width: 100%
+    height: auto
+    background: var(--color-dark)
+
+    
+    .header
+        width: 100vw
+        height: 3rem
+        padding: 1rem 0
+        background: var(--color-dark)
+        color: var(--color-blanco)
+        position: relative
+        overflow: hidden
+
+
+        .logo
+            float: left
+            font-size: var(--font-size-grande-medio)    
+            padding: 1rem
+          
+        .right-pos
+            float: right
+            overflow: hidden
+            margin: 0 1rem
+            padding: 1rem
+
+        .exit
+            color: white
+
+            &:hover
+                background: var(--color-gris-claro)
+
+    .body
+        display: flex
+        flex-direction: row
+        overflow: hidden
+
+        .navegacionHuesped
+            width: 20rem
+            height: 90vh
+            background: var(--color-dark)
+            color: var(--color-blanco)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            .title
+                background: var(--color-blanco)
+                color: var(--color-dark)
+                width: 100%
+                padding: 1rem 0
+                text-align: center
+                margin-bottom: 2rem
+
+            ul
+                width: 100%
+                .section
+                    text-align: center
+                    color: var(--color-blanco)
+                    padding: 1rem 0rem
+                    transition: ease 0.5s background
+                    cursor: pointer
+
+                    &:hover
+                        background: var(--color-gris-claro)
+                    
+
+        .content-section
+            background: var(--color-gris-claro)
+            width: 100%
+
+            .coler
+                width: 90%
+                margin: 0 auto
+                background: white
+
+
+ul
+    list-style: none
+
+
+.title-section
+    font-family: var(--tipografia-dos)
+    font-size: var(--font-size-grande-medio)
+    padding: 2rem

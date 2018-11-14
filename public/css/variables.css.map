@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAQ,8DAAsD;AAK9D,KAAM;EACF,YAAY,CAAC,KAAK;EAClB,YAAY,CAAC,KAAK;EAClB,kBAAkB,CAAC,KAAK;EACxB,sBAAsB,CAAC,gBAAgB;EACvC,cAAc,CAAC,KAAK;EACpB,sBAAsB,CAAC,sBAAsB;EAC7C,iBAAiB,CAAC,QAAQ;EAK1B,kBAAkB,CAAC,KAAK;EACxB,0BAA0B,CAAC,KAAK;EAChC,wBAAwB,CAAC,OAAO;EAChC,kBAAkB,CAAC,OAAO;EAI1B,gBAAgB,CAAC,yBAAyB",
-"sources": ["../../resources/sass/variables.sass"],
-"names": [],
-"file": "variables.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../resources/sass/variables.sass"],"names":[],"mappings":"AAAQ;AAKP;EACG;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAKA;EACA;EACA;EACA;EACA;EAGA;EACA","file":"variables.css"}

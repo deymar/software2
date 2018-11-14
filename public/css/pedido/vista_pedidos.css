@@ -1,0 +1,13 @@
+.table-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+.table-content .content-pedido {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=vista_pedidos.css.map */

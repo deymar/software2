@@ -13,6 +13,7 @@ body
 
 ul
     list-style: none
+        
     
 a
     text-decoration: none
@@ -21,3 +22,105 @@ input , button
     outline: none
     border: none
 
+
+.btn-peq
+    padding: 0.2rem
+    background: var(--color-dark)
+    color: var(--color-blanco)
+    font-family: var(--tipografia-uno)
+    font-size: var(--font-size-peque)
+    cursor: pointer
+
+.input-peq
+    padding: 0.2rem
+    font-family: var(--tipografia-uno)
+    text-align: center
+    font-size: var(--font-size-peque)
+    border: 1px solid var(--color-dark)
+
+.color-green
+    transition: 0.3s ease background
+    background: var(--color-green)
+    color: var(--color-blanco)
+    
+    &:hover
+        background: var(--color-gren-claro)
+
+.color-red
+    transition: 0.3s ease background
+    background: var(--color-red)
+    color: var(--color-blanco)
+
+    
+    &:hover
+        background: var(--color-red-claro)
+
+
+
+
+.table
+    
+    width: 100%
+    overflow: hidden
+    border-collapse: collapse
+
+    .thead
+        background: black
+        color: var(--color-blanco)  
+
+        .tencabezado
+            padding: 0.5rem 0
+            text-align: center
+
+    .tbody
+
+        .fila
+            &:nth-child(2n)
+                background: var(--color-gris-blaquesino)
+
+            .tcol
+                padding: 0.5rem 2rem
+                height: auto
+                min-width: 0.5rem
+                text-align: center
+
+
+/**
+    botones**/
+.btn-mediano
+    background: var(--color-dark)
+    color: var(--color-blanco)
+    font-family: var(--tipografia-uno)
+    font-size: var(--font-size-peque)
+    width: 10rem
+    padding: 0.5rem
+    cursor: pointer
+    transition: 0.3s ease background
+    
+    &:hover
+        background: var(--color-gris-claro)
+
+
+.barra-estado
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background: var(--color-dark)
+    color: var(--color-blanco)
+    padding: 0.1rem 0 
+
+    .estado
+        margin: 0 1rem
+        padding: 0.5rem
+
+
+.btn
+    padding: 0.7rem
+    cursor: pointer
+    font-family: var(--tipografia-uno)
+
+    
+    
+
+                

@@ -45,6 +45,16 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+
+        'personal' => [
+            'driver' => 'session',
+            'provider' => 'personal',
+        ],
+
+        'huesped' => [
+            'driver' => 'session',
+            'provider' => 'huesped',
+        ],
     ],
 
     /*
@@ -69,6 +79,17 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+
+        'personal' => [
+            'driver' => 'eloquent',
+            'model' => App\Personal::class,
+        ],
+        
+        'huesped' => [
+            'driver' => 'eloquent',
+            'model' => App\Habitacion::class,
+        ], 
+
 
         // 'users' => [
         //     'driver' => 'database',

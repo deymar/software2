@@ -1,51 +1,98 @@
 .container {
-  width: 100vw; }
+  width: 100vw;
+}
+.container .content-login {
+  width: 30%;
+  margin: 2rem auto;
+  overflow: hidden;
+  background: var(--color-oscuro-opacado);
+}
+@media (max-width: 850px) {
   .container .content-login {
-    width: 30%;
-    margin: 2rem auto;
-    overflow: hidden;
-    background: var(--color-oscuro-opacado); }
-    @media (max-width: 850px) {
-      .container .content-login {
-        width: 100%; } }
-    .container .content-login .title {
-      background: var(--color-blanco);
-      color: var(--color-dark);
-      font-family: var(--tipografia-uno);
-      font-size: var(--font-size-grande-segundo);
-      text-align: center; }
-    .container .content-login .form-login {
-      display: flex;
-      flex-direction: column;
-      margin: 1.5rem; }
-      .container .content-login .form-login .input-vertical, .container .content-login .form-login .input-horizontal {
-        overflow: hidden;
-        padding: 1rem; }
-      .container .content-login .form-login .input-vertical .input-mediano {
-        width: 100%;
-        background: var(--color-gris-claro);
-        color: var(--color-blanco);
-        padding: 0.5rem 0;
-        height: var(--font-size-grande-medio);
-        text-align: center;
-        font-size: var(--font-size-normal);
-        font-family: var(--tipografia-uno); }
-      .container .content-login .form-login .input-horizontal {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center; }
-        .container .content-login .form-login .input-horizontal .btn-form {
-          cursor: pointer;
-          width: 100%;
-          margin: 1rem 0rem 1rem 0rem;
-          padding: 1rem 0;
-          font-family: var(--tipografia-uno);
-          font-size: var(--font-size-normal);
-          color: var(--color-blanco);
-          background: var(--color-dark); }
+    width: 100%;
+  }
+}
+.container .content-login .title {
+  background: var(--color-blanco);
+  color: var(--color-dark);
+  font-family: var(--tipografia-uno);
+  font-size: var(--font-size-grande-segundo);
+  text-align: center;
+}
+.container .content-login .form-login {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+.container .content-login .form-login .input-vertical, .container .content-login .form-login .input-horizontal {
+  overflow: hidden;
+  padding: 1rem;
+}
+.container .content-login .form-login .input-vertical .input-mediano {
+  width: 100%;
+  background: var(--color-gris-claro);
+  color: var(--color-blanco);
+  padding: 0.5rem 0;
+  height: var(--font-size-grande-medio);
+  text-align: center;
+  font-size: var(--font-size-normal);
+  font-family: var(--tipografia-uno);
+  transition: ease 0.5s all;
+}
+.container .content-login .form-login .input-vertical .input-mediano:focus {
+  background: var(--color-blanco);
+  color: var(--color-dark);
+}
+.container .content-login .form-login .input-vertical .input-mediano:focus::placeholder {
+  color: var(--color-dark);
+}
+.container .content-login .form-login .input-vertical .spiner {
+  width: 100%;
+  font-size: var(--font-size-normal);
+  font-family: var(--tipografia-uno);
+  background: var(--color-gris-claro);
+  color: var(--color-blanco);
+  padding: 0.5rem 0;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  transition: ease 0.5s all;
+}
+.container .content-login .form-login .input-vertical .spiner:focus {
+  background: var(--color-blanco);
+  color: var(--color-dark);
+}
+.container .content-login .form-login .input-vertical .spiner .seleccionable {
+  border: none;
+}
+.container .content-login .form-login .input-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container .content-login .form-login .input-horizontal .btn-form {
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0;
+  font-family: var(--tipografia-uno);
+  font-size: var(--font-size-normal);
+  color: var(--color-blanco);
+  background: var(--color-dark);
+}
 
 ::placeholder {
-  color: var(--color-blanco); }
+  color: var(--color-blanco);
+}
+
+.error-message {
+  text-align: center;
+  background: var(--color-error);
+  color: var(--color-error-dark);
+  font-size: var(--font-size-peque);
+  font-family: var(--tipografia-uno);
+  font-style: italic;
+}
 
 /*# sourceMappingURL=loginStyle.css.map */

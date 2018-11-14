@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": ";;;AAGA,UAAU;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,OAAO,EAAE,GAAG",
-"sources": ["../../../resources/sass/layouts/estructura_principal.sass"],
-"names": [],
-"file": "estructura_principal.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../../resources/sass/layouts/estructura_principal.sass"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAAA;AAAA;AAGA;EACI;EACA;EACA;EACA;EACA;EACA","file":"estructura_principal.css"}
