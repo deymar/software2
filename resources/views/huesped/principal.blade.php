@@ -10,7 +10,7 @@
 
 @section('body-huesped')
     <div class="bienvenida">
-        Bienvenido a la habitacion querido amiwo {{auth('huesped')->user()->nro_puerta}}
+        Bienvenido a la habitacion  {{auth('huesped')->user()->nro_puerta}}
     </div>
 @endsection
 
