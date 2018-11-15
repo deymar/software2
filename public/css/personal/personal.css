@@ -1,0 +1,30 @@
+.multitab {
+  width: 100%;
+  background: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+}
+.multitab .tab {
+  color: var(--color-blanco);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.multitab .tab:hover {
+  background: var(--color-blanco);
+  color: var(--color-dark);
+}
+.multitab .target-tab {
+  background: var(--color-blanco);
+  color: black;
+}
+
+.content-pedido {
+  width: 80%;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+}
+
+/*# sourceMappingURL=personal.css.map */

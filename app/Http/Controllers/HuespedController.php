@@ -18,6 +18,8 @@ class HuespedController extends Controller
 
     public function principalHuesped()
     {
+        // dd(Auth::check());
+
         return view('huesped.principal');
     }
 

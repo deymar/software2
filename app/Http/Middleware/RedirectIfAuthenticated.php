@@ -18,6 +18,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if(Auth::guard('personal')->check()){
+            
             return redirect('/personal');
             
         }elseif (Auth::guard('huesped')->check()) {

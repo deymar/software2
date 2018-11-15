@@ -68,6 +68,31 @@ Route::post('/huesped/cancelarPedidoComida', 'HuespedController@cancelarPedidoCo
 
 
 
+/**
+ * acciones en cocina
+ */
+
+Route::get('/cocina/ver_pedidos', 'CocinaController@verificarPedidos')->name('cocinaVerPedidos');
+
+Route::get('/cocina/pedidos_cola', 'CocinaController@pedidosEnCola')->name('cocinaEnCola');
+
+Route::get('/cocina/pedidos_preparando', 'CocinaController@pedidosPreparando')->name('cocinaPreparando');
+
+Route::get('/cocina/pedidos_listo', 'CocinaController@pedidosListo')->name('cocinaListo');
+
+Route::post('/cocina/cambiar_estado', 'CocinaController@cambiarEstado')->name('cambiarEstadoPedidoComida');
+
+
+/**acciones de recepcion */
+
+Route::get('/recepcion/ver_pedidos', 'RecepcionController@verPedidos')->name('recepcionVerPedidos');
+Route::get('/recepcion/ver_Listos', 'RecepcionController@verListos')->name('recepcionVerListos');
+
+Route::get('/recepcion/ver_enviados', 'RecepcionController@verEnviados')->name('recepcionVerEnviados');
+
+
+Route::get('/recepcion/ver_entregados', 'RecepcionController@verEntregados')->name('recepcionVerEntregados');
+Route::post('/recepcion/cambiar_estado', 'RecepcionController@cambiarEstado')->name('recepcionCambiarEstado');
 
 
 

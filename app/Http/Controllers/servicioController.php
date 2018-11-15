@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\http\Controllers\Auth;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\MenuComidaHorario;

@@ -25,7 +25,7 @@ class Pedido_Comida extends Model
     
     protected function getPedidosHuesped($hab)
     {
-        return Pedido_comida::select(
+        return Pedido_Comida::select(
             'id',
             'id_habitacion',
             'fecha_pedido',
@@ -36,6 +36,21 @@ class Pedido_Comida extends Model
             ->where('estado','!=',5)
             ->orderBy('fecha_pedido','asc')
             ->get();
+    }
+
+    protected function getPedidosEtado($estado)
+    {
+        return Pedido_Comida::select(
+            'pedido_comida.id',
+            'pedido_comida.id_habitacion',
+            'h.nro_puerta',
+            'pedido_comida.fecha_pedido',
+            'pedido_comida.estado'
+        )
+        ->join('habitacion As h','h.id','=','pedido_comida.id_habitacion')
+        ->where('estado',$estado)
+        ->orderBy('fecha_pedido','asc')
+        ->get();
     }
 
 }

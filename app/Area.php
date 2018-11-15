@@ -10,9 +10,15 @@ class Area extends Model
     protected $table = "area";
     
 
-    static function getAreas()
+    Protected static function getAreas()
     {
         return Area::all();
+    }
+
+    protected static function getArea($id)
+    {
+        $area = Area::find($id);
+        return $area;
     }
 
 }

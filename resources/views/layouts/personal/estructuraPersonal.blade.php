@@ -1,6 +1,5 @@
 @extends('../layouts/inicio/estructura')
 
-
     <link rel="stylesheet" href="/css/huesped/principal.css">
 
 
@@ -24,16 +23,33 @@
             
             <nav class="navegacionHuesped">
                 <div class="title">
-                    Servicios
+                    Operaciones
                 </div>
                 <ul>
-                <a href="{{route('servicioHabitacion')}}">
-                        <li class="section">Servicio a la Habitacion</li>
-                    </a>
-                    <li class="section">Lavanderia</li>
-                    <li class="section">Piscina</li>
-                    <li class="section">Spa</li>
-                    <li class="section">Otro</li>
+                    @switch(session('datos_usuario')['nombre_area'])
+                        @case('Cocina')
+                            <a href="{{route('cocinaVerPedidos')}}">
+                                <li class="section">Verificar Pedidos</li>
+                            </a>
+                            @break
+                        @case('Recepcion')
+                            <a href="{{route('recepcionVerPedidos')}}">
+                                <li class="section">Verificar Pedidos</li>
+                            </a>
+                            @break
+                        @case('Bar')
+
+                            @break
+
+                        @case('Spa')
+
+                            @break
+
+                        @case('Limpieza')
+                            @break                            
+                    @endswitch
+                        
+                    
                 </ul>
             </nav>
 
@@ -47,5 +63,5 @@
 @endsection
 
 @section('scripts')
-  
+
 @endsection
